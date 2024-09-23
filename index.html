@@ -36,7 +36,9 @@
 						<li><a href="#contact">contact us</a></li>
 					</ul>
 				</nav>
-				<a href="" class="menu"><i class="fa-solid fa-bars"></i></a>
+				<a href="" class="menu" id="triggerId"
+					><i class="fa-solid fa-bars"></i
+				></a>
 				<a href="" class="cancel"><i class="fa-solid fa-xmark"></i></a>
 			</div>
 		</header>
@@ -166,11 +168,13 @@
 		<script>
 			document.querySelector(".menu").addEventListener("click", (e) => {
 				document.querySelector("header").classList.add("active");
+				document.body.style.overflow = "hidden";
 				e.preventDefault();
 			});
 
 			document.querySelector(".cancel").addEventListener("click", () => {
 				document.querySelector("header").classList.remove("active");
+				document.body.style.overflow = "auto";
 				e.preventDefault();
 			});
 		</script>
