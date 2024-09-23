@@ -185,7 +185,7 @@ header nav a:hover {
 /* Dark Styles */
 /* ----------------------------------------- */
 #dark {
-	background-image: url("/images/background-results.png");
+	background-image: url("/images/results.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
