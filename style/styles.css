@@ -71,7 +71,7 @@ a {
 /* Header Styles */
 /* ----------------------------------------- */
 header {
-	background-image: url("./images/background.png");
+	background-image: url("/images/background.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -179,6 +179,12 @@ header nav a:hover {
 	justify-content: space-between;
 	align-items: center;
 	gap: 1rem;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+#what-we-do .icons .card:hover {
+	transform: translateY(-5px);
 }
 
 /* ----------------------------------------- */
@@ -228,6 +234,16 @@ header nav a:hover {
 	justify-content: center;
 	gap: 1rem;
 	padding: 1rem;
+	overflow: hidden;
+}
+
+.dot .content {
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.dot .content:hover {
+	transform: scale(1.1);
 }
 
 .dot h4 {
@@ -243,7 +259,7 @@ header nav a:hover {
 /* Contact Styles */
 /* ----------------------------------------- */
 #contact {
-	width: 20%;
+	width: 30%;
 	margin: 8rem auto 2.4rem;
 	text-align: center;
 }
